@@ -15,10 +15,10 @@ class TrieNode {
   }
 }
 
-class Trie {
+class PrefixTree {
   private TrieNode root;
   /** Initialize your data structure here. */
-  public Trie() {
+  public PrefixTree() {
     root = new TrieNode();
   }
 
@@ -70,8 +70,8 @@ class Trie {
 
   public static void main(String[] args) {
     String word = "apple";
-    Trie trie = new Trie();
-    trie.insert(word);
-    System.out.println(trie.startsWith("app"));
+    PrefixTree prefixTree = new PrefixTree();
+    prefixTree.insert(word);
+    System.out.println(prefixTree.startsWith("app"));
   }
 }
