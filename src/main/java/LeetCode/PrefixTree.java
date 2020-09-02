@@ -16,7 +16,7 @@ class TrieNode {
 }
 
 class PrefixTree {
-  private TrieNode root;
+  public TrieNode root;
   /** Initialize your data structure here. */
   public PrefixTree() {
     root = new TrieNode();
